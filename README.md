@@ -1,23 +1,31 @@
 # Diviso
 
-Applicazione web per dividere il conto tra amici: inserimento delle voci, ripartizione delle spese e lettura assistita degli scontrini.
+Applicazione web indipendente per dividere il conto tra amici, ripartire le spese e leggere scontrini tramite OCR.
 
-**Versione attualmente pubblicata:** https://sartoriluca65.github.io/
+## Pubblicazione
 
-## Organizzazione
-- `index.html`: codice dell'app Diviso.
-- `.cursorrules` e `.cursor/rules/lavoro-italiano.mdc`: regole comuni degli altri progetti.
-- `.github/workflows/verify.yml` e `scripts/check-structure.mjs`: controllo automatico minimo della struttura.
+Questo repository contiene il codice della versione autonoma. **Indirizzo previsto dopo l'attivazione di GitHub Pages:** https://sartoriluca65.github.io/Diviso/
 
-## Pubblicazione e dipendenze
-Il sito principale resta nel repository `sartoriluca65.github.io`. Questo repository separato è una copia di lavoro, **non** la sorgente automaticamente pubblicata sul sito principale.
-Alcune immagini, script di analisi e collegamenti continuano a fare riferimento al dominio originale; prima di pubblicare Diviso su un nuovo indirizzo occorre renderli autonomi e verificare tutte le funzioni.
+La vecchia versione pubblicata su https://sartoriluca65.github.io/ resta separata e non viene modificata.
 
-## Dati personali
-I dati conservati nel browser non sono inclusi nel repository. Prima di cambiare dominio o percorso dell'app, esportare eventuali dati personali: l'archiviazione locale non si trasferisce automaticamente.
+Per pubblicare: **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save**. La pubblicazione richiede che la funzione Pages sia abilitata per il repository.
 
-## Verifiche
-Eseguire `node scripts/check-structure.mjs`. Il workflow GitHub Actions esegue lo stesso controllo su push e pull request. Si tratta di un controllo strutturale, non di un test funzionale completo.
+## Dipendenze
 
-## Modifiche
-Seguire le regole comuni: creare un ramo `feat/`, `fix/` o `chore/`, verificare, quindi aprire una pull request. Non effettuare deploy o merge senza autorizzazione.
+- `index.html`: applicazione completa.
+- `diviso-logo.svg`: logo e icona locali, senza collegamenti al sito originale.
+- Google Fonts: caricamento facoltativo di caratteri web.
+- Tesseract.js via jsDelivr: caricato soltanto quando si usa la scansione OCR; questa funzione richiede Internet. Il resto dell'app non dipende dal sito originale.
+- I link verso le altre app Lukiapp sono semplici collegamenti di navigazione.
+
+Il codice di tracciamento del portale originale non viene caricato.
+
+## Dati e cambio indirizzo
+
+Diviso salva i dati nel browser con la chiave `diviso-v2`. **I dati locali non si trasferiscono automaticamente** passando dal vecchio indirizzo al nuovo: sono due origini web distinte. Conservare la vecchia app e i suoi dati prima di cambiare indirizzo.
+
+## Sviluppo e controlli
+
+Le regole comuni sono in `.cursorrules` e `.cursor/rules/lavoro-italiano.mdc`. Eseguire `node scripts/check-structure.mjs`. GitHub Actions verifica automaticamente la struttura per ogni pull request.
+
+Modificare il codice su un ramo separato e aprire una pull request. Non modificare direttamente `main`.
