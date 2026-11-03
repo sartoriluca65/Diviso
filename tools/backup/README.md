@@ -105,3 +105,7 @@ automaticamente. Non ripristinare il codice come sostituto del recupero dei dati
 ## Copertura di questo repository
 
 Diviso: cattura mirata di diviso-v2, con persone, gruppi e spese. La vecchia versione sul portale condivide la chiave: nessuna separazione automatica. Il nuovo formato aggiuntivo conserva esattamente il JSON precedente.
+
+## Prove sulle copie applicative
+
+Vedi [E2E-RESULTS.md](E2E-RESULTS.md) per i casi effettivamente provati, le incompatibilità native ancora aperte e i limiti del recupero operativo. Gli strumenti rimangono separati dall’app pubblicata.
