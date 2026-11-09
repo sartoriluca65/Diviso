@@ -10,7 +10,7 @@
   "repository": "sartoriluca65/Diviso",
   "sourceSha": "7bc632bb598a9a630aa6e385bcd3f422d1d1f8a9",
   "branch": "feat/cloudflare-five-apps-2026-11-09",
-  "mode": "private-live",
+  "mode": "staging",
   "release": "2026-11-09.1",
   "issuer": "https://proud-rain-876d.cloudflareaccess.com",
   "services": [],
