@@ -1,0 +1,20 @@
+{
+  "app": "diviso",
+  "title": "Diviso",
+  "sourceBase": "",
+  "accountId": "aeb24d5686ed9104117c8ba6c1ef0dd2",
+  "worker": "luki-diviso-preview",
+  "origin": "https://luki-diviso-preview.sartori-luca65.workers.dev",
+  "databaseName": "luki-diviso-preview-db",
+  "bucket": "luki-diviso-preview-files",
+  "repository": "sartoriluca65/Diviso",
+  "sourceSha": "7bc632bb598a9a630aa6e385bcd3f422d1d1f8a9",
+  "branch": "feat/cloudflare-five-apps-2026-11-09",
+  "mode": "staging",
+  "release": "2026-11-09.1",
+  "issuer": "https://proud-rain-876d.cloudflareaccess.com",
+  "services": [],
+  "databaseId": "2f24c6a1-fe27-4440-8872-69694dac760c",
+  "accessAppId": "3695ff0d-8626-4c58-b5e4-3dfa46f7f7db",
+  "audience": "7eef0fd6ec0b60e84e69e0ed8e5a0149dbe20820093a733f16bc5eee53c3be4f"
+}
